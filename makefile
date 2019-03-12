@@ -2,7 +2,7 @@ all: README.md
 
 README.md:
   echo "Code works only with Linux and MacOS operating system."
-  echo "Assessment dat $(date)"
+  echo "Assessment date $(date)"
   echo "Course evaluation and assessment project guessinggame.sh" > README.md
   echo "There are $(wc -l < guessinggame.sh) lines in guessinggame.sh" >> README.md
  
