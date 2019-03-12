@@ -1,6 +1,6 @@
 !/usr/bin/env bash
 #File: guessinggame.sh
-#Created by: Devaashish Sharma
+#Created by: Devaashish-23
 
 
 actualcount=$(ls -1 | wc -l)
