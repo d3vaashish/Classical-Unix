@@ -1,4 +1,3 @@
-##Classical Unix
 *Guessing Game.*</br>
 NOTE: Code works only with Linux and MacOS operating system.</br>
 Assessment date Fri Mar 15 04:12:20 IST 2019</br>
