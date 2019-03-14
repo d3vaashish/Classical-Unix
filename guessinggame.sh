@@ -1,4 +1,4 @@
-!/usr/bin/env bash
+#!/usr/bin/env bash
 #File: guessinggame.sh
 #Created by: Devaashish-23
 
