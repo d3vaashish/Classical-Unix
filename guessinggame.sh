@@ -3,7 +3,7 @@
 #Created by: Devaashish-23
 
 
-actualcount=$(ls -1 | wc -l)
+actualcount=$(ls -l | egrep ^- | wc -l)
 
 function user_hint {        # function
     if [[ $1 -gt $2 ]]          # if statement
