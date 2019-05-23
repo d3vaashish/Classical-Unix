@@ -2,7 +2,7 @@ all: README.md
 
 README.md:
   echo "##Classical Unix" > README.md
-  echo "###Guessing Game." >> README.md
+  echo "Guessing Game." >> README.md
   echo " "
   echo "NOTE: Code works only with Linux and MacOS operating system." >> README.md
   echo "Assessment date $(date)" >> README.md
