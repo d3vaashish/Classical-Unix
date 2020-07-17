@@ -1,26 +1,23 @@
 #!/usr/bin/env bash
 #File: guessinggame.sh
-#Created by: Devaashish-23
+#Created by: bumblebee2311
 
+true_val=$(ls -l | grep -v ^- | wc -l)
 
-actualcount=$(ls -l | egrep ^- | wc -l)
-
-function user_hint {        # function
-    if [[ $1 -gt $2 ]]          # if statement
+function guessed_val {
+    if [[ $1 -gt $2 ]]
     then
-	echo "Too high guessed!"
+	echo "Too high !"
     elif [[ $1 -lt $2 ]]
     then
-	echo "Too low guessed!"
+	echo "Too low !"
     else
-	echo ""
-	echo "Congratualations! nailed it!"
+	echo "BRaVO !"
     fi
 }
 
-while [[ $actualcount -ne $guess ]]    # loop
+while [[ $true_val -ne $input_val ]]
 do
-    read -p "Guess how many files are in the current directory? " guess
-    echo $(user_hint $guess $actualcount)
-    echo ""
+    read -p "Guess, how many files r in working directory? " input_val
+    echo $(guessed_val $input_val $true_val)
 done
